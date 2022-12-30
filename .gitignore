@@ -1,0 +1,21 @@
+node_modules
+.idea
+
+/.cache
+/build
+/dist
+/public/build
+/.mf
+.env
+
+# Yarn berry
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# Tailwindcss generated file
+!/app/styles/app.css

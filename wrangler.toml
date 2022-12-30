@@ -1,0 +1,18 @@
+name = "remix-cloudflare-workers"
+
+workers_dev = true
+main = "./build/index.js"
+# https://developers.cloudflare.com/workers/platform/compatibility-dates
+compatibility_date = "2022-04-05"
+
+[site]
+  bucket = "./public"
+
+[build]
+  command = "npm run build"
+
+[vars]
+
+# The necessary secrets are:
+# - DATABASE_URL ## Prisam database connection to pear.seed
+# Run `echo <VALUE> | wrangler secret put <NAME>` for each of these
